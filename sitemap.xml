@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://usairim.pages.dev/the-hunger-that-never-leaves.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://usairim.pages.dev/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
