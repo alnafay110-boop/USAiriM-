@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hunger That Never Leaves | USAiriM Publishing</title>
+<meta name="description" content="A spiritual guide to the ache every heart feels — and the only thing that has ever truly satisfied it. Grounded in the Qur'an and authentic Sunnah. Instant PDF/EPUB download.">
+<link rel="canonical" href="https://usairim.pages.dev/the-hunger-that-never-leaves.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="book">
+<meta property="og:title" content="The Hunger That Never Leaves">
+<meta property="og:description" content="A spiritual guide to the ache every heart feels — and the only thing that has ever truly satisfied it.">
+<meta property="og:url" content="https://usairim.pages.dev/the-hunger-that-never-leaves.html">
+<meta property="og:image" content="https://usairim.pages.dev/images/books/the-hunger-that-never-leaves.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "The Hunger That Never Leaves",
+  "author": { "@type": "Organization", "name": "USAiriM Publishing" },
+  "inLanguage": "en",
+  "bookFormat": "https://schema.org/EBook",
+  "offers": {
+    "@type": "Offer",
+    "price": "12.99",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://payhip.com/b/jXF65"
+  }
+}
+</script>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="rainbow-bar"></div>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" role="img" aria-label="USAiriM Publishing logo"></span>
+      <span class="logo-name">USAiriM</span><span class="logo-tag">Publishing</span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" id="navToggle">☰</button>
+    <nav class="nav" id="siteNav">
+      <a href="index.html">Home</a>
+      <a href="books.html" class="active">Books</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="https://payhip.com/USAiriM" class="nav-btn">Store</a>
+  </div>
+</header>
+
+<section class="product-page">
+  <div class="container product-grid">
+
+    <div class="product-image">
+      <img src="images/books/the-hunger-that-never-leaves.jpg" alt="The Hunger That Never Leaves — book cover">
+    </div>
+
+    <div class="product-info">
+      <span class="product-category">Spiritual &amp; Self Development</span>
+      <h1>The Hunger That Never Leaves</h1>
+      <div class="rating">★★★★★ <span>New release</span></div>
+      <p class="price">$12.99</p>
+      <p>A honest, warmly written guide to the quiet ache so many people feel — the sense that something is missing even when life looks full — and the path the Qur'an and the authentic Sunnah point to for finally answering it. Written for skeptics, seekers and believers alike.</p>
+      <div class="formats">
+        <span>PDF</span>
+        <span>EPUB</span>
+      </div>
+      <a href="https://payhip.com/b/jXF65" class="buy-now">Buy Now — $12.99</a>
+
+      <div class="trust-row">
+        <span>🔒 Secure checkout via Payhip</span>
+        <span>⚡ Instant download</span>
+        <span>↩️ 7-day refund policy</span>
+      </div>
+
+      <div class="product-details">
+        <h2>What's inside</h2>
+        <ul>
+          <li>30 chapters exploring why the human heart keeps searching, and what it's really searching for</li>
+          <li>Grounded throughout in the Qur'an and hadith graded sahih or hasan</li>
+          <li>Written in warm, modern English — for lifelong Muslims and curious skeptics alike</li>
+          <li>A reflective, non-judgmental tone: this is a book about coming home, not a book about guilt</li>
+        </ul>
+        <h2>Format &amp; delivery</h2>
+        <p>Delivered instantly after checkout as a PDF and EPUB file, readable on phone, tablet, e-reader or computer. See our <a href="refund-policy.html">refund policy</a> for details.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>USAiriM Publishing</h3>
+      <p>Authentic Islamic digital publishing — books, journals and planners based on the Qur'an and the authentic Sunnah.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Formats</h4>
+      <p>PDF eBooks</p>
+      <p>EPUB</p>
+      <p>Journals &amp; Planners</p>
+    </div>
+    <div>
+      <h4>Policies</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="refund-policy.html">Refund Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+  <div class="container copyright">
+    © 2026 USAiriM Publishing. All Rights Reserved. · <a href="mailto:usairim132@gmail.com">usairim132@gmail.com</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
