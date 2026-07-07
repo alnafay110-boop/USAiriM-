@@ -582,3 +582,222 @@ img{max-width:100%;display:block;}
   background-size:cover;
   background-position:center;
 }
+/* ========= USAiriM Luxury Rainbow Glass Design ========= */
+
+:root{
+  --bg:#050816;
+  --surface:rgba(255,255,255,.08);
+  --surface-border:rgba(255,255,255,.18);
+
+  --text:#ffffff;
+
+  --blue:#2563EB;
+  --purple:#7C3AED;
+  --pink:#EC4899;
+  --gold:#FACC15;
+  --black:#111827;
+
+  --rainbow:linear-gradient(
+      135deg,
+      #2563EB,
+      #7C3AED,
+      #EC4899,
+      #FACC15,
+      #111827,
+      #2563EB
+  );
+}
+
+[data-theme="light"]{
+  --bg:#F8FAFC;
+  --surface:rgba(255,255,255,.75);
+  --surface-border:rgba(0,0,0,.08);
+  --text:#111827;
+}
+
+body{
+
+background:#050816;
+color:var(--text);
+overflow-x:hidden;
+position:relative;
+
+background-image:
+radial-gradient(circle at 15% 20%,rgba(37,99,235,.35),transparent 25%),
+radial-gradient(circle at 80% 10%,rgba(236,72,153,.28),transparent 25%),
+radial-gradient(circle at 50% 85%,rgba(250,204,21,.22),transparent 30%),
+radial-gradient(circle at 90% 70%,rgba(124,58,237,.35),transparent 25%);
+
+animation:AuroraMove 18s ease infinite;
+background-size:200% 200%;
+
+}
+
+/* Aurora Animation */
+
+@keyframes AuroraMove{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/* Rainbow Header */
+
+.nav{
+
+background:rgba(8,10,30,.55);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+/* Glass Cards */
+
+.card{
+
+background:var(--surface);
+
+backdrop-filter:blur(22px);
+
+border:1px solid var(--surface-border);
+
+border-radius:22px;
+
+box-shadow:
+0 15px 45px rgba(0,0,0,.35);
+
+transition:.45s;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Animated Rainbow Border */
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+inset:-2px;
+
+background:var(--rainbow);
+
+background-size:300%;
+
+animation:BorderFlow 6s linear infinite;
+
+z-index:-1;
+
+border-radius:24px;
+
+}
+
+@keyframes BorderFlow{
+
+0%{background-position:0%;}
+
+100%{background-position:300%;}
+
+}
+
+/* 3D Hover */
+
+.card:hover{
+
+transform:
+translateY(-10px)
+rotateX(6deg)
+rotateY(-6deg)
+scale(1.03);
+
+box-shadow:
+0 25px 60px rgba(124,58,237,.35);
+
+}
+
+/* Premium Buttons */
+
+.cta{
+
+background:var(--rainbow);
+
+background-size:300%;
+
+animation:BorderFlow 8s linear infinite;
+
+border:none;
+
+color:white;
+
+padding:15px 32px;
+
+font-weight:700;
+
+border-radius:999px;
+
+transition:.35s;
+
+box-shadow:
+0 0 20px rgba(37,99,235,.35);
+
+}
+
+.cta:hover{
+
+transform:translateY(-4px) scale(1.05);
+
+box-shadow:
+0 0 35px rgba(236,72,153,.45),
+0 0 60px rgba(124,58,237,.25);
+
+}
+
+/* Neon Text */
+
+.hero h1{
+
+font-size:clamp(2.8rem,6vw,5rem);
+
+background:var(--rainbow);
+
+background-size:300%;
+
+animation:BorderFlow 8s linear infinite;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+text-shadow:
+0 0 18px rgba(124,58,237,.18);
+
+}
+
+/* Glass Images */
+
+img{
+
+border-radius:20px;
+
+transition:.45s;
+
+}
+
+img:hover{
+
+transform:scale(1.04);
+
+box-shadow:
+0 20px 50px rgba(37,99,235,.25);
+
+}
