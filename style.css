@@ -3,67 +3,32 @@
    Design tokens
    ========================================================= */
 :root{
-  --ink:#F5F3FB;          /* headings — near-white on the new dark background */
-  --ink-soft:#C7C5DE;     /* secondary text */
-  --parchment:#0A0A16;    /* page background — deep premium black-navy */
-  --parchment-deep:#14142A; /* elevated surface (cards, alt sections) */
-  --gold:#F5B942;         /* accent — bright gold, pops on dark */
-  --gold-deep:#D99B2B;
-  --teal:#33E6D8;         /* accent — bright cyan-teal for links */
-  --teal-deep:#1FBFB2;
-  --charcoal:#D9D7EC;     /* body text on dark background */
-  --clay:#FF5C93;         /* rare accent — bestseller ribbon, hot pink */
-  --line:rgba(255,255,255,0.12);
+  --ink:#1B2A4A;          /* primary heading / dark ink */
+  --ink-soft:#33456b;
+  --parchment:#FAF6EE;    /* page background, warm paper */
+  --parchment-deep:#F1EAD9;
+  --gold:#B08D57;         /* manuscript-gold accent, used sparingly */
+  --gold-deep:#8a6c3e;
+  --teal:#0F5257;         /* secondary accent, links/icons */
+  --teal-deep:#0b3d40;
+  --charcoal:#2B2B2B;     /* body text */
+  --clay:#B5482F;         /* rare accent: bestseller ribbon only */
+  --line:#E4DCC8;
   --radius:6px;
-  --shadow:0 10px 30px rgba(0,0,0,0.45);
-  --shadow-lift:0 18px 46px rgba(139,92,246,0.30);
+  --shadow:0 10px 30px rgba(27,42,74,0.08);
+  --shadow-lift:0 16px 40px rgba(27,42,74,0.14);
   --maxw:1160px;
 
-  /* Bold multi-colour brand gradient — blue / purple / pink / yellow,
-     used boldly across buttons, headings and accents for a premium look. */
-  --rainbow: linear-gradient(100deg,#2E5CFF,#8B3DFF,#EC4899,#FFC93C,#2E5CFF);
-}
-
-@keyframes rainbowShift{
-  0%{background-position:0% 50%;}
-  100%{background-position:200% 50%;}
-}
-@keyframes auroraDrift{
-  0%{transform:translate(0,0) scale(1);}
-  100%{transform:translate(4%,-3%) scale(1.1);}
+  /* Brand green — used for all primary buttons/CTAs */
+  --green:#1E8A56;
+  --green-deep:#166B43;
 }
 
 .rainbow-text{
-  background:var(--rainbow);
-  background-size:300% 300%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  animation:rainbowShift 8s linear infinite;
+  color:var(--gold-deep);
 }
 .rainbow-bar{
-  height:4px;
-  width:100%;
-  background:var(--rainbow);
-  background-size:300% 300%;
-  animation:rainbowShift 6s linear infinite;
-}
-
-/* Fixed, softly-animated colour wash behind the whole site */
-body::before{
-  content:"";
-  position:fixed;
-  inset:-15%;
-  z-index:0;
-  background:
-    radial-gradient(38% 30% at 12% 15%, rgba(46,92,255,0.40), transparent 70%),
-    radial-gradient(34% 28% at 88% 12%, rgba(236,72,153,0.34), transparent 70%),
-    radial-gradient(46% 36% at 50% 95%, rgba(139,61,255,0.34), transparent 70%),
-    radial-gradient(30% 26% at 92% 82%, rgba(255,201,60,0.26), transparent 70%),
-    radial-gradient(30% 26% at 6% 85%, rgba(51,230,216,0.22), transparent 70%);
-  filter:blur(70px);
-  animation:auroraDrift 22s ease-in-out infinite alternate;
-  pointer-events:none;
+  display:none;
 }
 
 @font-face{ /* system-safe fallbacks act as our type stack */
@@ -103,12 +68,7 @@ img{max-width:100%;display:block;}
   text-transform:uppercase;
   font-weight:700;
   margin-bottom:10px;
-  background:var(--rainbow);
-  background-size:300% 300%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  animation:rainbowShift 8s linear infinite;
+  color:var(--gold-deep);
 }
 
 /* =========================================================
@@ -178,17 +138,15 @@ img{max-width:100%;display:block;}
 }
 .nav a:hover::after,.nav a.active::after{transform:scaleX(1);}
 .nav-btn{
-  background:var(--rainbow);
-  background-size:300% 300%;
-  animation:rainbowShift 8s linear infinite;
+  background:var(--green);
   color:#fff !important;
   padding:11px 22px;
   border-radius:var(--radius);
   font-size:14px;
   font-weight:600;
-  transition:filter .2s ease;
+  transition:background .2s ease;
 }
-.nav-btn:hover{filter:brightness(0.92);}
+.nav-btn:hover{background:var(--green-deep);}
 .nav-toggle{display:none;}
 
 @media (max-width:760px){
@@ -232,15 +190,11 @@ img{max-width:100%;display:block;}
   text-transform:uppercase;
   font-weight:700;
   color:var(--teal-deep);
+  background:#e8f1f0;
+  border:1px solid #cfe3e1;
   padding:6px 14px;
   border-radius:999px;
   margin-bottom:22px;
-  border:2px solid transparent;
-  background-image:linear-gradient(#fff,#fff),var(--rainbow);
-  background-origin:border-box;
-  background-clip:padding-box, border-box;
-  background-size:100% 100%, 300% 300%;
-  animation:rainbowShift 6s linear infinite;
 }
 .hero h1{
   font-size:clamp(34px,5vw,54px);
@@ -264,13 +218,11 @@ img{max-width:100%;display:block;}
   transition:transform .15s ease, background .2s ease, color .2s ease;
 }
 .btn-primary,.buy-btn,.buy-now,.button,.btn{
-  background:var(--rainbow);
-  background-size:300% 300%;
-  animation:rainbowShift 8s linear infinite;
+  background:var(--green);
   color:#fff !important;
 }
 .btn-primary:hover,.buy-btn:hover,.buy-now:hover,.button:hover,.btn:hover{
-  filter:brightness(0.93);
+  background:var(--green-deep);
   transform:translateY(-1px);
 }
 .btn-secondary{
@@ -284,15 +236,13 @@ img{max-width:100%;display:block;}
   pointer-events:none;
 }
 
-/* Hero visual — real photograph with a rainbow frame and overlaid title text */
+/* Hero visual — real photograph with a gold frame and overlaid title text */
 .hero-image{display:flex;justify-content:center;}
 .hero-photo-frame{
   width:290px;
   padding:3px;
   border-radius:3px 16px 16px 3px;
-  background:var(--rainbow);
-  background-size:300% 300%;
-  animation:rainbowShift 10s linear infinite;
+  background:var(--gold);
   box-shadow:var(--shadow-lift);
   transform:rotate(-2deg);
 }
@@ -373,14 +323,8 @@ img{max-width:100%;display:block;}
 .discover{background:var(--parchment-deep);border-bottom:1px solid var(--line);}
 .section-title{max-width:640px;margin:0 auto 48px;text-align:center;}
 .section-title span{
-  font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;
-  display:inline-block;
-  background:var(--rainbow);
-  background-size:300% 300%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  animation:rainbowShift 8s linear infinite;
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--gold-deep);font-weight:700;
 }
 .section-title h2{font-size:clamp(26px,3.4vw,36px);margin-top:8px;}
 .section-title p{color:var(--ink-soft);margin-top:10px;}
@@ -407,14 +351,7 @@ img{max-width:100%;display:block;}
 }
 .book-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);}
 .book-card{border-top:3px solid transparent;}
-.book-card:hover{
-  border-top-color:transparent;
-  background-image:linear-gradient(#fff,#fff),var(--rainbow);
-  background-origin:border-box;
-  background-clip:padding-box, border-box;
-  background-size:100% 100%, 300% 300%;
-  animation:rainbowShift 6s linear infinite;
-}
+.book-card:hover{border-top-color:var(--gold);}
 .book-card::before{ /* dog-eared corner — recurring manuscript motif */
   content:"";
   position:absolute;top:0;right:0;
@@ -476,19 +413,16 @@ img{max-width:100%;display:block;}
 }
 .category-card{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:26px 12px;text-align:center;font-size:34px;
+  padding:26px 12px;text-align:center;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
   transition:transform .15s ease, border-color .15s ease;
   cursor:default;
 }
+.category-card svg{display:block;}
 .category-card h3{font-size:14.5px;margin-top:10px;color:var(--ink);}
 .category-card:hover{
   transform:translateY(-3px);
-  border-color:transparent;
-  background-image:linear-gradient(#fff,#fff),var(--rainbow);
-  background-origin:border-box;
-  background-clip:padding-box, border-box;
-  background-size:100% 100%, 300% 300%;
-  animation:rainbowShift 6s linear infinite;
+  border-color:var(--gold);
 }
 #noResults{display:none;text-align:center;color:var(--ink-soft);padding:20px 0;}
 
@@ -505,14 +439,8 @@ img{max-width:100%;display:block;}
   box-shadow:var(--shadow-lift);
 }
 .product-category{
-  font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;
-  display:inline-block;
-  background:var(--rainbow);
-  background-size:300% 300%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent;
-  animation:rainbowShift 8s linear infinite;
+  font-size:12px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--teal-deep);font-weight:700;
 }
 .product-info h1{margin-top:10px;font-size:clamp(26px,3.6vw,36px);}
 .rating{color:var(--gold-deep);font-size:15px;margin:12px 0;}
@@ -627,8 +555,7 @@ img{max-width:100%;display:block;}
 /* Reading progress bar */
 #readingProgress{
   position:fixed;top:0;left:0;height:3px;width:0%;
-  background:var(--rainbow);background-size:300% 300%;
-  animation:rainbowShift 6s linear infinite;
+  background:var(--gold);
   z-index:200;transition:width .1s linear;
 }
 
